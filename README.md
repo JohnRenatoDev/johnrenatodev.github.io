@@ -28,3 +28,7 @@ The PT/EN links select a complete page, including translated metadata and access
 The English page downloads `/downloads/joao-russio-cv-en.pdf`; the Portuguese page downloads `/downloads/joao-russio-cv-pt-br.pdf`. These are same-origin PDF links with the HTML `download` attribute and work without JavaScript. Replace these files when updating the resumes.
 
 Both PDFs are generated from the reviewed English and Portuguese Markdown sources in the parent CV workspace. Run `scripts/build_resume_pdf.py EN` and `scripts/build_resume_pdf.py PT-BR` there to regenerate them. The copy was revised for natural, direct wording while preserving the original experience, dates, qualifications, and results.
+
+## Brand
+
+The header uses the existing Russio logo in black and white SVG variants, selected by the page theme. The favicon uses the same brand symbol. Logo files are in `img/`.

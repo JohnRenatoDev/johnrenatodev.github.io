@@ -11,8 +11,16 @@ a, button { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; color: inherit; }
 .page { width: min(100% - 96px, 1120px); margin-inline: auto; }
 .site-header { display: flex; align-items: center; gap: 28px; padding-block: 26px; }
-.wordmark { font-size: 34px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
-.wordmark span, h1 span { color: var(--accent); }
+.wordmark { display: inline-flex; align-items: center; flex-shrink: 0; width: 180px; }
+.wordmark img { display: block; width: 100%; height: auto; }
+.wordmark .logo-dark { display: none; }
+[data-theme="dark"] .wordmark .logo-light { display: none; }
+[data-theme="dark"] .wordmark .logo-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .wordmark .logo-light { display: none; }
+  :root:not([data-theme]) .wordmark .logo-dark { display: block; }
+}
+h1 span { color: var(--accent); }
 .site-header > nav:not(.language-switch) { margin-left: auto; display: flex; align-items: center; gap: 26px; font-size: 14px; }
 .theme-toggle { border: 0; border-left: 1px solid var(--line); background: none; padding: 4px 0 4px 20px; cursor: pointer; display: flex; align-items: center; }
 [hidden] { display: none !important; }
@@ -54,7 +62,7 @@ footer nav { display: flex; gap: 8px; }
 @media (max-width: 600px) {
   .page { width: calc(100% - 40px); }
   .site-header { gap: 16px; padding-block: 24px; }
-  .wordmark { font-size: 30px; }
+  .wordmark { width: 128px; }
   .site-header > nav:not(.language-switch) { gap: 15px; font-size: 12px; }
   .theme-toggle { padding-left: 12px; }
   .theme-toggle .icon { width: 20px; height: 20px; }
