@@ -1,249 +1,76 @@
-<!DOCTYPE html>
-<html lang="en"> 
+<!doctype html>
+<html lang="en">
 <head>
-	<title>John Renato Russio</title>	
-	<!-- meta tags -->
-    <meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<meta name="author" content="John Renato Russio">
-	<meta name="description" content="I'm a Full-Stack software engineer based in Santos, Brazil!">
-	<meta name="keywords" content="Software Engineer, Developer, Minimalist">
-    <meta property="og:url" content="https://johnrenatodev.github.io">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="John Renato Russio | Software Engineer">
-    <meta property="og:description" content="I convert coffee into code!">
-    <meta property="og:image" content="https://johnrenatodev.github.io/img/ava.jpg" />
-    <meta property="og:image:secure_url" content="https://johnrenatodev.github.io/img/ava.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="800">
-    <meta property="og:image:height" content="800">
-    <meta property="og:locale" content="en">
-    <meta property="og:site_name" content="John Renato Russio | Full-Stack Software Developer">
-	<meta property="fb:app_id" content="2075722672573438">
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="I convert coffee into code!"/>
-    <meta name="twitter:title" content="John Renato Russio | Full-Stack Software Developer"/>
-	<meta name="twitter:domain" content="https://johnrenatodev.github.io"/>
-	<!-- Css links -->
-	<link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		.intro h1:before {
-			/* Edit this with your name or anything else */
-			content: 'John';
-		}
-		.minimalism-link {
-			color: black !important;
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>João Russio — Engineering, AI & Leadership</title>
+  <meta name="description" content="Head of Forward Deployed Engineering at Mosten. Building useful software, leading engineering teams, and bringing AI into everyday business.">
+  <link rel="canonical" href="https://johnrenatodev.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://johnrenatodev.github.io/">
+  <meta property="og:title" content="João Russio — Engineering, AI & Leadership">
+  <meta property="og:description" content="Building software. Leading people. Thoughts on software, AI, and leadership.">
+  <meta property="og:image" content="https://johnrenatodev.github.io/img/ava.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('theme'); } catch {}
+      document.documentElement.dataset.theme = theme === 'light' || theme === 'dark'
+        ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script src="js/portfolio.js" defer></script>
 </head>
 <body>
-	<!-- Navigation -->
-	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
-				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">John Renato Russio.</span>
-				</div>
-			    <nav id="navbar-1" class="navbar item-nav">
-				    <ul>
-				        <li class="active"><a href="#about">About</a></li>
-				        <li><a href="#experiences">Experiences</a></li>
-				        <li><a href="#achievements">Achievements</a></li>
-				        <li><a href="#skills">Skills</a></li>
-				    </ul>
-				</nav>
-			</header>
-		</div>
-	</div>
-
-	<!-- Introduction -->
-	<div class="intro section" id="about">
-		<div class="container">
-			<p>Hi, How are you?</p>
-			<div class="units-row units-split wrap">
-				<div class="unit-20">
-					<img src="img/ava.jpg" alt="Avatar">
-				</div>
-				<div class="unit-80">
-					<h1>I am John!<br><span id="typed"></span></h1>					
-				</div>
-				<p>
-					I'm a Brazilian Full-Stack Software Developer. I currently work for an incredible company called <a href="https://modalgr.com.br" target="_blank">ModalGR</a>, and as a side job I am a co-founder of <a href="https://deeztech.com.br" target="_blank">  DeezTech </a> an agency focused on WordPress.  
-				</p>				
-			</div>
-		</div>
-	</div>
-
-	<header>
-		<div class="container">
-			<div class="units-row">
-					<ul class="social list-flat">
-						<li><a href="mailto:joao.russio@deeztech.com.br"><i class="fa fa-envelope-square"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/johnrenatodev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/JohnRenatoDev" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="https://twitter.com/JoaoRussio" target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/johnrussio.dev/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.facebook.com/joaorenato.bruhnsdelfinirussio" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					</ul>
-			</div>
-		</div>
-	</header>
-
-	<!-- Work Experience -->
-	<div class="work section second" id="experiences">
-		<div class="container">
-			<h1>Work<br>Experiences</h1>
-			<ul class="work-list">
-				<li>2020-Now</li>
-				<li><a href="https://modalgr.com.br/" target="_blank">ModalGR</a></li>
-				<li>Full-Stack Software Developer with focus in .Net-core and Angular.</li>
-			</ul>
-			<ul class="work-list">
-				<li>2019-2020</li>
-				<li><a href="https://izimarketplace.com.br" target="_blank">iZiMarketPlace</a></li>
-				<li>Full-Stack Software Developer with focus in Node.js and Vue.js</li>
-			</ul>			
-			<ul class="work-list">
-				<li>2019-2019</li>
-				<li><a href="https://yunnit.com/" target="_blank">Grupo Yunnit</a></li>
-				<li>Full-Stack Software Developer with focus in Node.js and Vue.js</li>
-			</ul>
-			<ul class="work-list">
-				<li>2017-2019</li>
-				<li><a href="https://izifinance.com/" target="_blank">iZiFinance</a></li>
-				<li>Full-Stack Software Developer with focus on Laravel</li>
-			</ul>
-			<ul class="work-list">
-				<li>2017 - NOW</li>
-				<li><a href="https://deeztech.com.br" target="_blank">Deez Tech</a></li>
-				<li>Full-Stack Software Developer with focus on WordPress</li>
-			</ul>			
-			<ul class="work-list">
-				<li>2016-2017</li>
-				<li><a href="https://www.destinoportugal.pt/" target="_blank">Destino Portugal</a></li>
-				<li>Junior Full-Stack Software Developer with focus on Laravel 5.4</li>
-			</ul>
-			<ul class="work-list">
-				<li>2015-2016</li>
-				<li><a href="https://www.solutudo.com.br/empresas/sp/santos/assistencia-tecnica/ctrl-alt-del-informatica-1937276" target="_blank">CTRL + ALT + DEL </a></li>
-				<li>Technical assistance in computer management</li>
-			</ul>	
-		</div>
-	</div>
-
-	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>Web Technology</li>
-				<li> HTML5 / CSS3 / Javascript / PHP / Node </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li> Desktop applications </li>
-				<li> C# / Go / Electron.js</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>App development </li>
-				<li> Flutter / React Native / Apache Cordova + Framework 7 </li>
-			</ul>			
-			<ul class="skill-list list-flat">
-				<li>Database</li>
-				<li> MySQL / MongoDB / PostgreSQL / SQLite / SQLServer </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Frameworks</li>
-				<li>Laravel / CodeIgniter / Zend / Vue / React / Express / Adonis...</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Infra</li>
-				<li> Windows / Linux / MacOS / Docker / AWS / Google Cloud / Herouku...</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Agile</li>
-				<li> Kanban / Scrum </li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Award & Achievements -->
-	<div class="award section second" id="achievements">
-		<div class="container">
-			<h1>Award &amp;<br>Achievements</h1>
-			<ul class="award-list list-flat">
-				<li>January 2019</li>
-				<li>Certification in Node.js</li>
-				<li><a href="https://www.caelum.com.br/" target="_blank">Caelum</a></li>
-			</ul>
-			<ul class="award-list list-flat">
-				<li>June 2016</li>
-				<li>Maximum grade in the TCC </li>
-				<li><a href="http://etecaf.com.br/tecnico-em-informatica-para-internet/" target="_blank">ETEC Aristóteles Ferreira</a></li>
-			</ul>
-		</div>
-	</div>
-
-
-	<!-- Award & Achievements -->
-	<div class="award section second" id="achievements">
-		<div class="container">
-			<h1>Education</h1>
-			<ul class="award-list list-flat">
-				<li>2015 - 2016</li>
-				<li>Technician in web development</li>
-				<li><a href="http://etecaf.com.br/tecnico-em-informatica-para-internet/" target="_blank">ETEC Aristóteles Ferreira</a></li>
-			</ul>
-			<ul class="award-list list-flat">
-				<li>2018 - 2018</li>
-				<li>Internet Systems Technologist</li>
-				<li><a href="https://fatecrl.edu.br/cursos/sistemas-para-internet/" target="_blank">Fatec Rubens Lara</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Quote -->
-	<div class="quote">
-		<div class="container text-centered">
-			<h1 class="minimalism-link"> <a href="https://www.theminimalists.com/" target="_blank"> Less is more. </a></h1>
-		</div>
-	</div>
-
-	<footer>
-		<div class="container">
-			<div class="units-row">
-			    <div class="unit-50">
-			    	<p>John Russio</p>
-			    </div>
-			    <div class="unit-50">
-					<ul class="social list-flat right">
-						<li><a href="mailto:joao.russio@deeztech.com.br"><i class="fa fa-send"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/johnrenatodev/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/JohnRenatoDev" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="https://twitter.com/JoaoRussio" target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/johnrussio.dev/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.facebook.com/joaorenato.bruhnsdelfinirussio" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					</ul>
-			    </div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
-    <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["Developer", "Entrepreneur", "Minimalist"],
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></symbol>
+  </svg>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="#main" aria-label="João Russio, home">JR<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#experiences">Experience</a><a href="#blog">Blog</a></nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
+        <svg class="icon sun" aria-hidden="true"><use href="#sun"/></svg>
+        <svg class="icon moon" aria-hidden="true"><use href="#moon"/></svg>
+      </button>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-title">
+        <h1 id="intro-title">João Russio<span>.</span></h1>
+        <h2>Building software. Leading people.</h2>
+        <p class="intro">Head of Forward Deployed Engineering at Mosten. I turn business problems into useful software, with simple systems and hands-on engineering.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://russios-blog.pages.dev/">Read the blog</a>
+          <a class="text-link" href="https://www.linkedin.com/in/johnrenatodev/">Let’s connect <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+        <div class="hero-meta"><span>Santos, Brazil</span><span>Less is more.</span></div>
+      </section>
+      <section class="editorial-section" id="about" aria-labelledby="about-title">
+        <div class="section-title"><span class="number" aria-hidden="true">01</span><h2 id="about-title">A little about me.</h2></div>
+        <div class="section-content"><p>Engineering, product thinking, and a healthy preference for fewer moving parts.</p><p>I build software, lead teams, and bring AI into everyday business. Outside work: books, side projects, and coffee.</p></div>
+      </section>
+      <section class="editorial-section" id="experiences" aria-labelledby="experience-title">
+        <div class="section-title"><span class="number" aria-hidden="true">02</span><h2 id="experience-title">Experience.</h2></div>
+        <dl class="experience-list section-content">
+          <div><dt>Mosten</dt><dd>Engineering leadership</dd></div>
+          <div><dt>DeezTech</dt><dd>Co-founder</dd></div>
+          <div><dt>Earlier work</dt><dd>Software engineering</dd></div>
+        </dl>
+      </section>
+      <section class="editorial-section" id="blog" aria-labelledby="blog-title">
+        <div class="section-title"><span class="number" aria-hidden="true">03</span><h2 id="blog-title">Notes from<br>the workbench.</h2></div>
+        <div class="section-content"><p>Thoughts on software, AI, leadership, and what I’m learning along the way.</p><a class="text-link" href="https://russios-blog.pages.dev/">Visit Russio’s Blog <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      </section>
+    </main>
+    <footer><span>João Russio</span><nav aria-label="Social links"><a href="https://github.com/JohnRenatoDev">GitHub</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/johnrenatodev/">LinkedIn</a><span aria-hidden="true">/</span><a href="https://x.com/JohnRussio">X</a></nav></footer>
+  </div>
 </body>
 </html>
