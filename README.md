@@ -27,4 +27,4 @@ The PT/EN links select a complete page, including translated metadata and access
 
 The English page downloads `/downloads/joao-russio-cv-en.pdf`; the Portuguese page downloads `/downloads/joao-russio-cv-pt-br.pdf`. These are same-origin PDF links with the HTML `download` attribute and work without JavaScript. Replace these files when updating the resumes.
 
-The English PDF uses the existing June 2026 resume. The Portuguese PDF is a complete translation of that resume; the older file named `CV PT-BR.pdf` was not used because its content mixes languages. The translation and reproducible PDF generation script are in the parent CV workspace.
+Both PDFs are generated from the reviewed English and Portuguese Markdown sources in the parent CV workspace. Run `scripts/build_resume_pdf.py EN` and `scripts/build_resume_pdf.py PT-BR` there to regenerate them. The copy was revised for natural, direct wording while preserving the original experience, dates, qualifications, and results.
