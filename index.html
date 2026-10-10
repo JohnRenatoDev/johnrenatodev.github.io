@@ -7,6 +7,9 @@
   <title>João Russio — Engineering, AI & Leadership</title>
   <meta name="description" content="Head of Forward Deployed Engineering at Mosten. Building useful software, leading engineering teams, and bringing AI into everyday business.">
   <link rel="canonical" href="https://johnrenatodev.github.io/">
+  <link rel="alternate" hreflang="en" href="https://johnrenatodev.github.io/">
+  <link rel="alternate" hreflang="pt-BR" href="https://johnrenatodev.github.io/pt/">
+  <link rel="alternate" hreflang="x-default" href="https://johnrenatodev.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://johnrenatodev.github.io/">
   <meta property="og:title" content="João Russio — Engineering, AI & Leadership">
@@ -14,17 +17,25 @@
   <meta property="og:image" content="https://johnrenatodev.github.io/img/ava.jpg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
   <script>
     (() => {
+      let language;
+      try { language = localStorage.getItem('language'); } catch {}
+      const explicitLanguage = new URLSearchParams(location.search).get('lang');
+      if (explicitLanguage === 'pt' || (explicitLanguage !== 'en' &&
+          (language === 'pt' || (!language && navigator.language.toLowerCase().startsWith('pt'))))) {
+        document.documentElement.dataset.languageRedirect = 'true';
+        location.replace('/pt/' + location.hash);
+      }
       let theme;
       try { theme = localStorage.getItem('theme'); } catch {}
       document.documentElement.dataset.theme = theme === 'light' || theme === 'dark'
         ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     })();
   </script>
-  <link rel="stylesheet" href="css/portfolio.css">
-  <script src="js/portfolio.js" defer></script>
+  <link rel="stylesheet" href="/css/portfolio.css">
+  <script src="/js/portfolio.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,6 +48,11 @@
     <header class="site-header">
       <a class="wordmark" href="#main" aria-label="João Russio, home">JR<span>.</span></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#experiences">Experience</a><a href="#blog">Blog</a></nav>
+      <nav class="language-switch" aria-label="Language">
+        <a href="/pt/" lang="pt-BR" hreflang="pt-BR" data-language="pt" aria-label="Português">PT</a>
+        <span aria-hidden="true">/</span>
+        <a href="/?lang=en" lang="en" hreflang="en" data-language="en" aria-label="English" aria-current="page">EN</a>
+      </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
         <svg class="icon sun" aria-hidden="true"><use href="#sun"/></svg>
         <svg class="icon moon" aria-hidden="true"><use href="#moon"/></svg>

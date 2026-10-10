@@ -16,3 +16,9 @@ No package installation or build step is required. GitHub Pages publishes the ro
 The theme follows the system preference until a visitor chooses light or dark mode. Manual choices persist in local storage; the site also works when storage or JavaScript is unavailable.
 
 The original template assets remain available, but the new page does not load jQuery, Kube, Typed.js, or remote fonts.
+
+## Languages
+
+English content lives in `index.html`; Brazilian Portuguese content lives in `pt/index.html`. Update both when changing copy. Both pages share CSS and JavaScript and work without JavaScript.
+
+The PT/EN links select a complete page, including translated metadata and accessibility labels. The English entry page follows a saved language preference, or the browser language on a first visit. `/?lang=en` explicitly opens English, and `/pt/` explicitly opens Portuguese. Language and theme choices are stored independently. Each page declares its language, canonical URL, and alternate language URLs.

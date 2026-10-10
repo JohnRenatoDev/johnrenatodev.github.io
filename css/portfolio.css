@@ -13,7 +13,7 @@ button { font: inherit; color: inherit; }
 .site-header { display: flex; align-items: center; gap: 28px; padding-block: 26px; }
 .wordmark { font-size: 34px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
 .wordmark span, h1 span { color: var(--accent); }
-.site-header nav { margin-left: auto; display: flex; align-items: center; gap: 26px; font-size: 14px; }
+.site-header > nav:not(.language-switch) { margin-left: auto; display: flex; align-items: center; gap: 26px; font-size: 14px; }
 .theme-toggle { border: 0; border-left: 1px solid var(--line); background: none; padding: 4px 0 4px 20px; cursor: pointer; display: flex; align-items: center; }
 [hidden] { display: none !important; }
 .theme-toggle:hover { color: var(--accent); }
@@ -55,7 +55,7 @@ footer nav { display: flex; gap: 8px; }
   .page { width: calc(100% - 40px); }
   .site-header { gap: 16px; padding-block: 24px; }
   .wordmark { font-size: 30px; }
-  .site-header nav { gap: 15px; font-size: 12px; }
+  .site-header > nav:not(.language-switch) { gap: 15px; font-size: 12px; }
   .theme-toggle { padding-left: 12px; }
   .theme-toggle .icon { width: 20px; height: 20px; }
   .hero { padding-top: 36px; }
@@ -71,5 +71,16 @@ footer nav { display: flex; gap: 8px; }
   .experience-list > div { grid-template-columns: 1fr 1.5fr; }
   footer { padding-block: 20px 28px; font-size: 12px; }
 }
-@media (max-width: 360px) { .site-header { gap: 10px; } .site-header nav { gap: 10px; } .hero-actions { gap: 16px; } }
+@media (max-width: 360px) { .site-header { gap: 10px; } .site-header > nav:not(.language-switch) { gap: 10px; } .hero-actions { gap: 16px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+
+/* The language links also work without JavaScript. */
+.site-header .language-switch { display: flex; align-items: center; gap: 8px; margin: 0; font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.language-switch a { padding-block: 5px; }
+.language-switch [aria-current="page"] { color: var(--accent); border-bottom: 1px solid currentColor; }
+.language-switch span { color: var(--line); }
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; row-gap: 18px; }
+  .site-header .language-switch { margin-left: auto; }
+  .site-header > nav:not(.language-switch) { order: 3; flex-basis: 100%; justify-content: flex-end; gap: 24px; }
+}
