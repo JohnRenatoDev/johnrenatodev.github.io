@@ -26,7 +26,7 @@ h1, h2, p { margin: 0; }
 h1 { font-size: clamp(70px, 12.6vw, 148px); line-height: 1.04; letter-spacing: -.065em; font-weight: 800; }
 .hero h2 { font-size: clamp(28px, 4.7vw, 48px); letter-spacing: -.035em; line-height: 1.15; margin-top: 14px; }
 .intro { font-size: clamp(18px, 2.75vw, 22px); line-height: 1.4; max-width: 820px; margin-top: 14px; color: var(--muted); text-wrap: pretty; }
-.hero-actions { display: flex; align-items: center; gap: 32px; margin-top: 24px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 32px; margin-top: 24px; }
 .button { display: inline-flex; justify-content: center; background: var(--accent); color: #fff; border-radius: 3px; padding: 13px 22px; font-size: 16px; font-weight: 500; transition: background .15s ease; }
 [data-theme="dark"] .button { color: #101112; }
 .button:hover { background: var(--hover); color: #fff; }
@@ -84,3 +84,7 @@ footer nav { display: flex; gap: 8px; }
   .site-header .language-switch { margin-left: auto; }
   .site-header > nav:not(.language-switch) { order: 3; flex-basis: 100%; justify-content: flex-end; gap: 24px; }
 }
+
+.resume-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; border: 1px solid var(--line); border-radius: 3px; color: var(--text); font-size: 16px; font-weight: 500; }
+.resume-button:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 600px) { .resume-button { font-size: 14px; } }
