@@ -1,6 +1,6 @@
 # João Russio — personal website
 
-Static portfolio published at https://johnrenatodev.github.io/ with a link to https://russios-blog.pages.dev/.
+Static portfolio published at https://johnrenatodev.github.io/ with a link to https://blog.russio.com.br/.
 
 ## Preview
 
