@@ -46,6 +46,7 @@ h1 { font-size: clamp(70px, 12.6vw, 148px); line-height: 1.04; letter-spacing: -
 .editorial-section { border-top: 1px solid var(--line); display: grid; grid-template-columns: .86fr 1fr; gap: 36px; padding-block: 28px; }
 .number { display: block; font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; color: var(--accent); margin-bottom: 4px; }
 .section-title h2 { font-size: clamp(28px, 4.4vw, 38px); letter-spacing: -.045em; line-height: 1.1; }
+.about-photo { display: block; width: min(100%, 240px); height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 3px; margin-top: 24px; }
 .section-content { font-size: clamp(14px, 1.6vw, 16px); line-height: 1.4; color: var(--muted); margin: 0; }
 .section-content p + p { margin-top: 12px; }
 .section-content .text-link { margin-top: 12px; color: var(--text); }
